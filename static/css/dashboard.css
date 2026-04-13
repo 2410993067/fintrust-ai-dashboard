@@ -1,0 +1,210 @@
+:root {
+  --bg: #f4f7fb;
+  --surface: rgba(255, 255, 255, 0.88);
+  --border-soft: rgba(15, 23, 42, 0.08);
+  --text-main: #122033;
+  --text-muted: #64748b;
+  --brand: #0f766e;
+  --brand-deep: #115e59;
+  --accent: #dff7f2;
+  --shadow-soft: 0 14px 34px rgba(15, 23, 42, 0.08);
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent 24%),
+    linear-gradient(180deg, #f8fbff 0%, var(--bg) 42%, #eef3f9 100%);
+}
+
+.page-shell {
+  max-width: 1180px;
+}
+
+.hero-panel,
+.surface-card,
+.metric-card,
+.table-card,
+.empty-card {
+  border: 1px solid var(--border-soft);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(10px);
+}
+
+.hero-panel {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--brand-deep);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin: 0.85rem 0 0.4rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.hero-copy {
+  max-width: 48rem;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.btn-soft {
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand) 0%, #14b8a6 100%);
+  box-shadow: 0 10px 25px rgba(15, 118, 110, 0.22);
+}
+
+.btn-soft:hover {
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand-deep) 0%, var(--brand) 100%);
+}
+
+.metric-card {
+  height: 100%;
+}
+
+.metric-card .card-body,
+.surface-card .card-body,
+.table-card .card-body,
+.empty-card .card-body {
+  padding: 1.35rem;
+}
+
+.metric-label {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.metric-value {
+  margin: 0;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.metric-note {
+  margin-top: 0.6rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.section-copy {
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.chart-shell {
+  position: relative;
+  min-height: 300px;
+}
+
+.table-modern {
+  margin-bottom: 0;
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-modern thead th {
+  border: 0;
+  padding: 0.95rem 1rem;
+  color: #0f172a;
+  background: #ecf3fb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.table-modern tbody td {
+  padding: 0.95rem 1rem;
+  border-color: rgba(15, 23, 42, 0.06);
+  vertical-align: middle;
+}
+
+.table-modern tbody tr:hover {
+  background: rgba(15, 118, 110, 0.04);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #eef7f6;
+  color: var(--brand-deep);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.empty-card {
+  text-align: center;
+}
+
+.empty-visual {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 1rem;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #dff7f2 0%, #e4efff 100%);
+  display: grid;
+  place-items: center;
+  color: var(--brand-deep);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.error-banner {
+  border: 0;
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 767.98px) {
+  .hero-panel,
+  .metric-card .card-body,
+  .surface-card .card-body,
+  .table-card .card-body,
+  .empty-card .card-body {
+    padding: 1.05rem;
+  }
+}

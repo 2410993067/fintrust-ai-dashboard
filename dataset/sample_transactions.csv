@@ -1,0 +1,7 @@
+id,date,client_id,card_id,amount,use_chip,merchant_id,merchant_city,merchant_state,zip,mcc,errors
+1,2023-01-05,C1000,1,123.45,Yes,M100,New York,NY,10001,5411,
+2,2023-01-10,C1001,2,-45.67,No,M101,Los Angeles,CA,90001,5411,
+3,2023-01-15,C1002,3,678.90,Yes,M102,Chicago,IL,60601,5411,
+4,2023-02-01,C1003,4,-23.45,Yes,M103,Houston,TX,77001,5411,
+5,2023-02-05,C1000,1,125.00,Yes,M100,New York,NY,10001,5411,
+6,2023-02-10,C1001,2,-46.00,No,M101,Los Angeles,CA,90001,5411,
